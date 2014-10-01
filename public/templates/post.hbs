@@ -22,10 +22,11 @@
 {{/if}}
 <br/>
 <h4>Comments</h4>
-{{#each comment in comments}}
-  <li>{{comment.text}}</li>
-{{/each}}
-
+<ul>
+  {{#each comments}}
+    <li>{{text}}</li>
+  {{/each}}
+</ul>
 <p>{{#link-to 'new-comment' this class="btn btn-default"}}New comment{{/link-to}}</p>
 
 {{outlet}}
